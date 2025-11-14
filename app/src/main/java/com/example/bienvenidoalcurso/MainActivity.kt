@@ -34,6 +34,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.layout.ContentScale // Para la imagen/logo
+import com.example.composecomponentexploration.ComponentScreen
 
 // Importaciones de Iconos de Material
 import androidx.compose.material.icons.Icons
@@ -53,16 +54,14 @@ class MainActivity : ComponentActivity() {
             BienvenidoAlCursoTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    // Color de fondo menta/verde claro
-                    color = Color(0xFFE6F3E6)
+                    color = MaterialTheme.colorScheme.background
                 ) {
-                    BusinessCardApp() // Llama a la nueva función de la tarjeta de presentación
+                    ComponentScreen() // ¡Llamando a la nueva función de exploración!
                 }
             }
         }
     }
 }
-
 // 2. FUNCIÓN PRINCIPAL: Contenedor de la Tarjeta de Presentación
 @Composable
 fun BusinessCardApp() {
